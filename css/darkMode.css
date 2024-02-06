@@ -1,0 +1,50 @@
+/* Stilar för mörkt läge */
+.dark-mode {
+    background-color: #3c3c3c;
+    /* Mörk bakgrundsfärg */
+    color: #ffffff;
+    /* Vit textfärg */
+}
+
+/* Stilar för länkar i mörkt läge */
+.dark-mode .header__links a {
+    color: #ffffff;
+}
+
+/* Hover-effekt för navigation-knappar i mörkt läge */
+.dark-mode .header__links a:hover {
+    border: solid 1px #000000;
+    transform: translateY(-1px);
+}
+
+
+
+/* Stilar för mörkt läge-växlingsknapp */
+.toggle-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* Stilar för växlingsknappens ikon */
+.toggle-button img {
+    max-width: 80%;
+}
+
+/* Stilar för att rotera växlingsknappens ikon för mörkt läge */
+.toggle-button img.flip {
+    transform: rotateY(180deg);
+    /* Roterar ikonen 180 grader på Y-axeln */
+    transition: transform 0.5s ease;
+    /* Gör rotationen mjuk över 0.5 sekunder */
+}
+
+.toggle-button img.flip-back {
+    transform: rotateY(0deg);
+    /* Återställer ikonens rotation */
+    transition: transform 0.5s ease;
+    /* Gör rotationen mjuk över 0.5 sekunder */
+}

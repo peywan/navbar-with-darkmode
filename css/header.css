@@ -1,0 +1,124 @@
+/* Importera typsnitt */
+@import url('https://fonts.googleapis.com/css2?family=Adamina:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400&display=swap');
+
+/* Universella grundstilar */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Body-stilar */
+body {
+    background-color: #ffffff;
+    /* Ljus bakgrundsfärg */
+    color: #151515;
+    /* Mörk textfärg */
+}
+
+
+/* Wrapper-stilar */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1140px;
+    /* Max width från föregående container-stilar */
+    margin: 20px auto;
+    /* Margin från föregående container-stilar */
+    padding: 0 15px;
+    /* Padding från föregående container-stilar */
+    flex-direction: column;
+    /* Från föregående container-stilar */
+    align-items: center;
+    /* Från föregående container-stilar */
+}
+
+
+
+/* Container-stilar */
+.container {
+    max-width: 1140px;
+    /* Max width similar to Tania's site for larger screens */
+    width: 100%;
+    /* Make it responsive */
+    margin: 20px auto;
+    /* Centered with automatic margins */
+    padding: 0 15px;
+    /* Padding on the sides */
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Align children in the center horizontally */
+}
+
+/* Header-länkar */
+.header__links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Adamina', sans-serif;
+}
+
+
+/* Navigation-knappar */
+.header__links a {
+    width: 160px;
+    padding: 5px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #151515;
+    /* Mörk textfärg */
+    border: solid 1px #333333;
+    border-radius: 5px;
+    margin: 0 40px;
+    box-shadow: 0 2px 4px #000000;
+    /* Mörk skugga för djup-effekt */
+    transition: 250ms;
+    font-size: 1.1rem;
+}
+
+/* Navigation-knappbilder */
+.header__links a img {
+    max-width: 30%;
+    height: auto;
+    margin-right: 5px;
+}
+
+/* Hover-effekt för navigation-knappar i ljusläge */
+.header__links a:hover {
+    /* Vit textfärg vid hover */
+    border: solid 1px #ffffff;
+    /* Ljusare skugga för djup-effekt */
+    transform: translateY(-1px);
+}
+
+/* Sektion för 'Om Mig' och RAM-bilden */
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+
+.about-me__subheading {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    letter-spacing: 1.1px;
+    font-family: 'Assistant';
+    width: 700px;
+    margin-right: 1
+}
+
+.about-me__image {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
